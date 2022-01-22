@@ -1,0 +1,53 @@
+.cta__section {
+    position: relative;
+    padding: 5% 10%;
+    width: 100%;
+    overflow: hidden;
+    @media(max-width:768px) {
+        padding: 7% 5% 7%;
+    }
+
+    &-img-container{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .cta-text {
+        display: flex;
+        justify-content: space-between;
+        @media(max-width:570px) {
+            align-items: center;
+            flex-direction: column;
+            row-gap: 2.3rem;
+            text-align: center;
+        }
+        
+        h1 {
+            color: white;
+            size: calc(1.3em + 1.3vw);
+            
+        }
+        a {
+            align-self: center;
+            display: flex;
+            align-items: center;
+            p {
+                color: white;
+                font-weight: 700;
+                letter-spacing: 2px;
+            }
+            svg {
+                margin-left: 16px;
+            }
+        }
+    }
+
+}

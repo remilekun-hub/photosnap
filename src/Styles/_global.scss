@@ -1,0 +1,30 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    outline-width: none;
+    outline: none;
+}
+h1 {
+    font-size: calc(1.5em + 1.5vw);
+    letter-spacing: 3px;
+    @media(max-width:520px) {
+        font-size: calc(1.7em + 1.7vw);
+    }
+}
+p {
+    color: darkgray;
+    line-height: 1.7;
+    font-size: 14.5px;
+    
+}
+.container {
+    max-width: 1400px;
+    margin: auto;
+}

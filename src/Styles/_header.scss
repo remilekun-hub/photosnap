@@ -1,0 +1,85 @@
+header{
+    width: 100%;
+    background-color: white;
+
+    nav {
+        display: flex;
+        padding:0 20px;
+        height: 5rem;
+        align-items: center;
+        justify-content: space-evenly;
+        z-index: 300;
+        @media(max-width:767px) {
+            justify-content: space-between;
+        }
+            a {
+                color: black;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                font-size: 1rem;
+            }
+        .desktopmenu {
+            .nav-menu {
+                margin-left: 20px;
+                .nav-item {
+                    display: inline-block;
+                    text-transform: uppercase;
+                    margin-right: 1.7rem;
+                    
+                }
+            }
+        }
+        .mobilemenu {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: white;
+            position: absolute;
+            width: 100%;
+            top: -100%;
+            right: 0;
+            left: 0;
+            text-align: center;
+            padding: 1.5rem 0;
+            transition: .4s linear;
+            z-index: 290;
+            .nav-menu {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                padding-bottom: 2rem;
+                .nav-item {
+                    margin-bottom: 1.2rem;
+                }
+                .nav-item {
+                    text-transform: uppercase;
+                    
+                }
+                
+            }
+            .cta {
+                text-align: center;
+            }
+            &.showmenu {
+                top: 5rem;
+            }
+        }
+        .cta {
+        background-color: black;
+        color: white;
+        width: max-content;
+        padding: 12px 20px;
+        letter-spacing: 2px;
+        font-weight: 700;
+        }
+        .nav-toggle {
+            z-index: 7000;
+            cursor: pointer;
+        }
+        .hide {
+            display: none;
+        }
+    }
+    
+}        

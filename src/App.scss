@@ -1,0 +1,27 @@
+@import './Styles/global';
+@import './Styles/text';
+@import './Styles/header';
+
+//home page
+.app {
+    overflow: hidden
+}
+@import './Styles/homepagehero';
+@import './Styles/beautiful';
+@import './Styles/designed';
+@import './Styles/stories';
+@import './Styles/features';
+@import './Styles/footer';
+
+//features page
+@import './Styles/featureshero';
+@import './Styles//featurelist';
+@import './Styles/cta';
+
+//stories page
+@import './Styles/storieshero';
+@import './Styles/storieswrapper';
+
+//pricing page
+@import './Styles/pricinghero';
+@import './Styles/plan';

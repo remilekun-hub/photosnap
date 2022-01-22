@@ -1,0 +1,109 @@
+.homehero-section {
+    display: flex;
+    overflow: hidden;
+    @media(max-width:520px) {
+        flex-direction: column-reverse;
+    }
+
+    .hero-text-container {
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .hero-text {
+           padding: 0 10%;
+        @media (min-width:1400px) {
+            padding: 0 17%;
+        }
+        @media (max-width:520px) {
+            padding: 15% 7%;
+        }
+            .text {
+                position: relative;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    left: -12.4%;
+                    top: 0;
+                    height: 100%;
+                    width: 5px;
+                    background: linear-gradient(to top, #FFC593, #BC7198, #5A77FF);
+
+                    @media (min-width:1400px) {
+                        left: -25.7%;
+                    }
+                    @media (max-width:768px) {
+                        left: -12.4%;
+                    }
+                    @media (max-width:520px) {
+                        height: 6px;
+                        width: 110px;
+                        left: 0;
+                        top: -15vw;
+                        background: linear-gradient(to right, #FFC593, #BC7198, #5A77FF);
+                    }
+
+                }
+            }
+            
+            
+
+            .paragraph {
+                margin-bottom: 3em;
+            }
+
+            h1 {
+                color: white;
+                margin-bottom: 1.5rem;
+                font-size: calc(1.5em + 1.5vw);
+                letter-spacing: 3px;
+                @media(max-width:520px) {
+                    font-size: calc(1.7em + 1.7vw);
+                }
+            }
+        
+            a {
+                color: white;
+                letter-spacing: 2px;
+                font-weight: 700;
+                display: flex;
+                align-items: center;
+
+                p {
+                    color: white;
+                }
+
+                svg {
+                    margin-left: 16px;
+                    
+                }
+            }
+        }
+    }
+    .image-container {
+        
+        
+        .hero-image {
+            height: 100%;
+            overflow: hidden;
+            @media(max-width:1149px) {
+                width: calc(100% + 2.55rem);
+                
+            }
+            @media(max-width:950px) {
+                width: auto;
+                
+            }
+            @media(max-width:520px) {
+                object-position: center;
+                object-fit: cover;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    
+    }
+}

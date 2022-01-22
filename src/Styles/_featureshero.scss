@@ -1,0 +1,77 @@
+.featurehero__section {
+    display: flex;
+    overflow: hidden;
+    @media (max-width:520px) {
+        flex-direction: column-reverse;
+
+    }
+
+    &-text-container {
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        
+        .text {
+            h1 {
+                color: white;
+                margin-bottom: 1.5rem;
+                letter-spacing: 3px;
+            }
+           position: relative;
+           &::after {
+            content: "";
+            position: absolute;
+            left: -12.5%;
+            top: 0;
+            height: 100%;
+            width: 5px;
+            background: linear-gradient(to top, #FFC593, #BC7198, #5A77FF);
+            @media (max-width:768px) {
+                left: -12.4%;
+            }
+            @media (max-width:520px) {
+                height: 6px;
+                width: 110px;
+                left: 0;
+                top: -15vw;
+                background: linear-gradient(to right, #FFC593, #BC7198, #5A77FF);
+            }
+            @media (min-width:1400px) {
+                left: -25.7%;
+            }
+
+        }
+        }
+
+    }
+    &-text {
+        padding: 0 10%;
+        position: relative;
+        @media (min-width:1400px) {
+            padding: 0 17%;
+        }
+        @media (max-width:520px) {
+            padding: 15% 7%;
+        }
+
+        
+    }
+    .image-container {
+        img {
+            height: 100%;
+            object-fit: cover;
+            
+            @media (max-width:520px) {
+                object-position: center;
+                object-fit: cover;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+
+}
