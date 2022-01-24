@@ -1094,7 +1094,6 @@ header nav .hide {
   padding: 10%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  row-gap: 5rem;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1121,10 +1120,11 @@ header nav .hide {
   -ms-flex-preferred-size: 31.66667%;
       flex-basis: 31.66667%;
   text-align: center;
+  margin-bottom: 3.5rem;
 }
 
 .featurelist__section-item:nth-child(2) {
-  margin-top: 2.6rem;
+  margin-top: 2rem;
 }
 
 @media (max-width: 500px) {
@@ -1134,7 +1134,7 @@ header nav .hide {
 }
 
 .featurelist__section-item svg {
-  margin-bottom: 3rem;
+  margin-bottom: 2.5rem;
 }
 
 .featurelist__section-item h3 {
