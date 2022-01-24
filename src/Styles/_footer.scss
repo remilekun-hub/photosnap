@@ -17,6 +17,9 @@
        padding-top: 11%;
        padding-bottom: 3rem;
     }
+    @media (max-width:550px) {
+        padding-top: 3rem;
+    }
     
     
     
@@ -56,7 +59,7 @@
         display: flex;
         justify-content: space-between;
         @media (max-width:685px) {
-            margin: 4rem 0;
+            margin: 3rem 0;
         }
        
         nav {
@@ -70,6 +73,12 @@
                     color: white;
                     font-weight: 700;
                     letter-spacing: 2px;
+                    transition: .2s ease;
+                    &:hover {
+                        color: darkgray;
+                        
+                    }
+                    
                 }
             }
             @media (max-width:1024px) {
@@ -119,18 +128,33 @@
             align-items: center;
             width: 100%;
             justify-content: flex-end;
+
+            &:hover {
+                p {
+                    
+                    color: darkgray;
+                }
+                svg {
+                   
+                    transform: translateX(5px);
+                }
+            }
             
             p {
                 color: white;
                 font-weight: 700;
                 letter-spacing: 2px;
+                transition: .3s ease;
                 
             }
 
             svg {
                 margin-left: 16px;
+                transition: .3s ease;
                 
             }
+            
+            
             
         }
         .copy {

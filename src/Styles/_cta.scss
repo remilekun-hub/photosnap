@@ -6,6 +6,9 @@
     @media(max-width:768px) {
         padding: 7% 5% 7%;
     }
+    @media(max-width:425px) {
+        padding: 12% 5% 12%;
+    }
 
     &-img-container{
         position: absolute;
@@ -43,9 +46,19 @@
                 color: white;
                 font-weight: 700;
                 letter-spacing: 2px;
+                transition: .3s ease;
             }
             svg {
                 margin-left: 16px;
+                transition: .3s ease;
+            }
+            &:hover {
+                p {
+                    color: darkgray;
+                }
+                svg {
+                    transform: translateX(5px);
+                }
             }
         }
     }

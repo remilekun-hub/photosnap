@@ -16,8 +16,16 @@ header{
                 color: black;
                 font-weight: 700;
                 text-transform: uppercase;
-                letter-spacing: 2px;
+                letter-spacing: 1.5px;
                 font-size: 1rem;
+                transition: .2s ease;
+
+                &:hover {
+                    color: darkgray;
+                }
+                
+
+                
             }
         .desktopmenu {
             .nav-menu {
@@ -26,6 +34,13 @@ header{
                     display: inline-block;
                     text-transform: uppercase;
                     margin-right: 1.7rem;
+                    
+                    a{
+                        transition: .2s ease;
+                        &:hover {
+                            color: darkgray;
+                        }
+                    }
                     
                 }
             }
@@ -54,8 +69,15 @@ header{
                 }
                 .nav-item {
                     text-transform: uppercase;
+                    a{
+                        transition: .2s ease;
+                        &:hover {
+                            color: darkgray;
+                        }
+                    }
                     
                 }
+                
                 
             }
             .cta {

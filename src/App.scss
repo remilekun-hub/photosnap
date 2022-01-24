@@ -3,9 +3,6 @@
 @import './Styles/header';
 
 //home page
-.app {
-    overflow: hidden
-}
 @import './Styles/homepagehero';
 @import './Styles/beautiful';
 @import './Styles/designed';
@@ -25,3 +22,4 @@
 //pricing page
 @import './Styles/pricinghero';
 @import './Styles/plan';
+@import './Styles/Pricingtable';

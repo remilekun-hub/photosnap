@@ -1,0 +1,117 @@
+.pricing__table {
+    padding: 8% 10%;
+    text-transform: uppercase;
+    @media (max-width:768px) {
+        padding: 8% 0;
+    }
+    @media (max-width:425px) {
+        padding: 15% 0 0;
+    }
+
+
+    .pricing__table__heading {
+        text-align: center;
+        font-weight: 600;
+        font-size: 26px;
+        margin-top: 50px;
+        letter-spacing: 3px;
+    }
+
+   .pricing__table {
+       font-size: 14px;
+       letter-spacing: 2px;
+       background-color:orange;
+       &--x {
+           padding: 25px 0;
+       }
+
+       &__row {
+           display: flex;
+           padding: 18px 0;
+           border-bottom: 1px solid get-color(light-gray);
+
+           &:nth-of-type(1) {
+               border-bottom: 1px solid black;
+           }
+
+           &--feature { 
+               width: 40%; 
+                padding-left: 15px;
+            }
+
+           &--plans, &--available {
+               display: flex;
+               width: 60%;
+           }
+
+           &--plans li { 
+                text-align: center;
+                width: calc(100% / 3); 
+           }
+
+           &--available li {
+                position: relative;
+                width: calc(100% / 3);
+                height: 100%;
+
+                &.checked {
+                    background-image: url(../Assets/pricing/desktop/check.svg);
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                }
+           }
+       }
+   }
+
+   @include rwd(800) {
+        margin: -50px 8vw 60px;
+   }
+
+   @include rwd(735) {
+       .pricing__table__heading {
+           margin-bottom: 30px;
+       }
+
+       .pricing__table {
+           &__row {
+               flex-direction: column;
+               padding: 22px 0;
+
+               &--feature, &--available {
+                   width: 100%;
+                   padding-left: 0;
+               }
+
+               &--available {
+                   height: 40px;
+                   margin-top: 15px;
+
+                   li {
+                        &::before {
+                            position: absolute;
+                            left: 0; top: 0;
+                            font-size: 11px;
+                            color: black;
+                        }
+
+                        &:nth-of-type(1) {
+                            &::before { content: 'Basic' }
+                        }
+
+                        &:nth-of-type(2) {
+                            &::before { content: 'Pro' }
+                        }
+
+                        &:nth-of-type(3) {
+                            &::before { content: 'Business' }
+                        }
+
+                       &.checked { background-position: left bottom }
+                   }
+               }
+
+               &--plans { display: none }
+           }
+       }
+   }
+}

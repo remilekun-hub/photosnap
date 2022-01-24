@@ -43,14 +43,28 @@
         align-items: center;
         font-weight: 700;
         letter-spacing: 2px;
+        
+        
+        
 
         .arrow {
             margin-left: 16px;
+            transition: .3s ease;
+            
         }
 
         p {
             color: black;
             letter-spacing: 2px;
+            transition: .3s ease;
+        }
+        &:hover {
+            p {
+                color: darkgray;
+            }
+            .arrow {
+                transform: translateX(5px);
+            }
         }
 
        }

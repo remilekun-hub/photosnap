@@ -1,13 +1,11 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 
 
 
 function Plan() {
-    const [Monthly, setMonthly] = useState(true)
+    const [Monthly, setMonthly] = useState(false)
     
-    useEffect(() => {
-        setMonthly(false)
-    }, [])
+    
 
 
     return (

@@ -28,3 +28,8 @@ p {
     max-width: 1400px;
     margin: auto;
 }
+@mixin rwd($screen) {
+    @media (max-width: $screen+'px') {
+        @content;
+    }
+} 

@@ -35,11 +35,21 @@
 
             p {
                 color: black;
+                transition: .3s ease;
             }
 
 
             .arrow {
                 margin-left: 25px;
+                transition: .3s ease;
+            }
+            &:hover {
+                p {
+                    color: darkgray;
+                }
+                .arrow {
+                    transform: translateX(5px);
+                }
             }
         }
     }
